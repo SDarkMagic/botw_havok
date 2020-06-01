@@ -59,6 +59,7 @@ This library comes with these commands:
 * `hk_compare`: Compare two or more packfiles
 * `hkrb_extract`: Extract shapes from Static Compound files by HashId
 * `hksc_to_hkrb`: Convert all Static Compound shapes into a single HKRB
+* `navToObj`: Convert a NavMesh JSON to a viewable OBJ format
 
 <br/>
 
