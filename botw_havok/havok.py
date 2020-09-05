@@ -107,7 +107,7 @@ class Havok:
             bw.write(_bw.getvalue())
 
         with open(path, "wb") as f:
-            return f.write(bw.getvalue())
+            return f.write(yaz0.compress(bw.getvalue()))
 
     @classmethod
     def from_dict(cls, l: list, path: Path = None):
@@ -128,7 +128,7 @@ class Havok:
     def to_json(self, path: str, pretty_print: bool = False):
         with open(path, "w") as f:
             if pretty_print:
-                return f.write(json.dumps(self.as_dict(), indent=4, default=default))
+                return f.write(json.dumps(self.as_dict(), indent=2, default=default))
             else:
                 return json.dump(self.as_dict(), f, default=default)
 
